@@ -1,0 +1,61 @@
+<settings>
+<category label="VIP">
+	<setting label="[COLOR lightblue]Configurações de Acesso[/COLOR] [COLOR gold](Vip):[/COLOR]" type="lsep"/>
+	<setting label="Usuário" id="username" type="text" default=""/>
+	<setting label="Senha" id="password" type="text" default="" enable="!eq(-1,false)" option="hidden"/>
+	<setting label="Servidor" id="servervip" type="text" default="" enable="!eq(-1,false)"/>	
+	<setting label="Saida de Transmissão VIP" id="saida" type="enum" values="TS|M3U8" default="0" />
+	<setting label="Exibir Menu VIP" id="exibirvip" type="bool" default="true" />
+	<setting label="[COLOR lightblue]Download app android[/COLOR]" type="lsep"/>
+    <setting label="[COLOR white]Plexys Pro: [COLOR lime]Recomendado[/COLOR]" type="action" action="RunScript(plugin.video.plexys.matrix, Plexyspro)"/>
+    <setting label="[COLOR white]Plexys Xtreme: [COLOR lime]Recomendado[/COLOR]" type="action" action="RunScript(plugin.video.plexys.matrix, Plexysxtreme)"/>
+    <setting label="[COLOR white]Plexys Fast: [COLOR gold]Opcional[/COLOR]" type="action" action="RunScript(plugin.video.plexys.matrix, Plexysfast)"/>
+    <setting label="[COLOR white]Plexys Lite: [COLOR gold]Opcional[/COLOR]" type="action" action="RunScript(plugin.video.plexys.matrix, Plexyslite)"/>
+    <setting label="[COLOR white]Plexys Lite2: [COLOR gold]Opcional[/COLOR]" type="action" action="RunScript(plugin.video.plexys.matrix, Plexyslite2)"/>
+	<setting label="[COLOR lightblue]Download app android[/COLOR]" type="lsep"/>
+    <setting label="[COLOR white]Horizon P2P: Outro Sistema[/COLOR]" type="action" action="RunScript(plugin.video.plexys.matrix, horizonp2p)"/>
+</category>
+<category label="Proxy">
+		<setting label="[COLOR lightblue]Opções do Proxy:[/COLOR]" type="lsep"/>
+		<setting label="Ativar Proxy" id="proxy" type="bool"  default="false" />
+		<setting label="Número de Tentativas" id="proxy_try" type="enum" values="1 Vez|2 Vezes|3 Vezes|4 Vezes|5 Vezes|6 Vezes|6 Vezes|7 Vezes|8 Vezes|9 Vezes|10 Vezes" default="4" />
+		<setting label="[COLOR yellow][B]Utilize apenas se a operadora estiver bloqueando o servidor[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Plexys.[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Aviso: Pode demorar a carregar[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Não se aplica a servidores de IPTV como o VIP esses tem[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]conexão direta.[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR yellow][B]Utilize VPN se a operadora bloqueia o IPTV.[/B][/COLOR]" type="bool"/>
+</category>
+<category label="Controle dos Pais">
+		<setting label="[COLOR lightblue]Controle dos Pais:[/COLOR]" type="lsep"/>
+		<setting label="Exibir Menu Adultos (Servidor 2)" id="adult" type="bool" default="false" />
+		<setting label="Tipo de Teclado (OK para trocar)" id="keyboard" type="enum" values="Númerico|Alfanúmerico" default="0" />
+		<setting label="Entre aqui para alterar senha, padrão: [COLOR yellow][B]0069[/B][/COLOR]" type="action" action="RunScript(plugin.video.plexys.matrix, SetPassword)"/>
+</category>
+<category label="Complementos">
+	<setting label="[COLOR lightblue]Configurações de Complemento:[/COLOR]" type="lsep"/>
+	<setting label="Verificar Complementos" id="check_addon" type="bool" default="true" />
+	<setting label="Baixar e Instalar Elementum" id="elementum" type="bool" default="true" />
+	<setting label="Baixar e Instalar Youtube" id="youtube" type="bool" default="false" />
+</category>
+<category label="Outros">
+	<setting label="[COLOR lightblue]Configurações Gerais:[/COLOR]" type="lsep"/>
+	<setting label="Exibir Mensagem de Boas Vindas" id="mensagem1" type="bool" default="true" />
+	<setting label="Exibir Mensagem de Status" id="mensagem2" type="bool" default="true" />
+	<setting label="Exibir Favoritos" id="favoritos" type="bool" default="false" />
+    <setting label="Entre aqui para limpar os favoritos" type="action" action="RunScript(plugin.video.plexys.matrix, limparFavoritos)"/>	
+	<setting label="Executar Youtube" id="ytbmode" type="enum" values="Interno 1|Interno 2|Externo" default="1" />	
+    <setting label="Exibir Menu Pesquisar" id="pesquisa" type="bool" default="false" />
+    <setting label="Use Miniaturas como Fanart" id="use_thumb" type="bool" default="false" />
+</category>
+<category label="Apoio">
+	<setting label="[COLOR lightblue]Suporte:[/COLOR]" type="lsep"/>
+    <setting label="[COLOR aquamarine]Ple[/COLOR][COLOR white]xys[/COLOR]: Site" type="action" action="RunScript(plugin.video.plexys.matrix, supportsite)"/>
+    <setting label="[COLOR aquamarine]Ple[/COLOR][COLOR white]xys[/COLOR]: Facebook" type="action" action="RunScript(plugin.video.plexys.matrix, supportfacebook)"/>
+    <setting label="[COLOR aquamarine]Ple[/COLOR][COLOR white]xys[/COLOR]: Telegram" type="action" action="RunScript(plugin.video.plexys.matrix, supporttelegram)"/>
+	<setting label="[COLOR lightblue]Doação:[/COLOR]" type="lsep"/>
+    <setting label="[COLOR aquamarine]Ple[/COLOR][COLOR white]xys[/COLOR]: [COLOR steelblue]Mercado[/COLOR][COLOR skyblue]Pago[/COLOR]" type="action" action="RunScript(plugin.video.plexys.matrix, donatemercadopago)"/>
+    <setting label="[COLOR aquamarine]Ple[/COLOR][COLOR white]xys[/COLOR]: [COLOR white]Pag[/COLOR][COLOR lime]Seguro[/COLOR]" type="action" action="RunScript(plugin.video.plexys.matrix, donatepagbank)"/>
+    <setting label="[COLOR aquamarine]Ple[/COLOR][COLOR white]xys[/COLOR]: [COLOR lime]PicPay[/COLOR]" type="action" action="RunScript(plugin.video.plexys.matrix, donatepicpay)"/>
+</category>
+</settings>
