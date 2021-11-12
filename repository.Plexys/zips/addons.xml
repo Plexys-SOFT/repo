@@ -10,9 +10,9 @@
 	<provides>video</provides>
 </extension>
 <extension point="xbmc.addon.repository" name="PLEXYS">
-	<info compressed="false">https://onpainel.gq/repository.Plexys/zips/addons.xml</info>
-            <checksum>https://onpainel.gq/repository.Plexys/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://onpainel.gq/repository.Plexys/zips/</datadir>
+	<info compressed="false">https://raw.githubusercontent.com/ystarley/repo/main/repository.Plexys/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/ystarley/repo/main/repository.Plexys/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/ystarley/repo/main/repository.Plexys/zips/zips/</datadir>
 </extension>
 <extension point="xbmc.addon.metadata">
 	<summary lang="en">[COLOR aquamarine][B]PLE[/COLOR][COLOR white]XYS[/B][/COLOR] - [B]It is a free video plugin for KODI that aggregates video playback links of various types.
