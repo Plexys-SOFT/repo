@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.Plexys" name="Plexys Repo" version="1.0" provider-name="Plexys">
+    <extension point="xbmc.addon.repository" name="Nome Repository">
+        <dir>
+            <info compressed="false">https://onpainel.gq/repository.Plexys/zips/addons.xml</info>
+            <checksum>https://onpainel.gq/repository.Plexys/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://onpainel.gq/repository.Plexys/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Plexys Repo</summary>
+        <description>Addons Plexys</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
